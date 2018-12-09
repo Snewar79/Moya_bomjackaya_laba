@@ -18,12 +18,17 @@ Class CppWinForm1.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
+    Boolean mouse_down : Public
+    Int32 st_x : Public
+    Int32 st_y : Public
+    Int32 en_x : Public
+    Int32 en_y : Public
+    Boolean good_data : Public
     Int32 point_count : Public
     cube_polinom<double>* polinoms : Public
     Double* x : Public
-    Int32 lb : Public
-    Int32 rb : Public
-    Int32 ub : Public
-    Int32 db : Public
-    System.Drawing.Graphics gr : Public
+    Double lb : Public
+    Double rb : Public
+    Double ub : Public
+    Double db : Public
     Double* y : Public

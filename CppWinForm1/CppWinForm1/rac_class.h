@@ -315,7 +315,7 @@ int main_2()
 			ch[i][j] = 0;
 	}
 
-	//Code by volkov
+
 
 
 	for (int i = 0; i < n + 2; i++)
@@ -387,7 +387,7 @@ int main_2()
 		cout << "	|	" << r[i] << "\n";
 	}
 
-	//Code by volkov
+
 
 
 	for (int i = n - 1; i > 2; i--)
@@ -472,7 +472,7 @@ int main_2()
 
 	for (int i = 2; i <= n; i++)
 	{
-		string out = "";//Code by volkov
+		string out = "";
 		out += "(" + to_string(a[i].m) + "/" + to_string(a[i].n) + ") + "
 			+ "(" + to_string(b[i].m) + "/" + to_string(b[i].n) + ") * (x - (" + to_string(x[i - 1].m) + "/" + to_string(x[i - 1].n) + ")) + "
 			+ "(" + to_string(c[i].m) + "/" + to_string(c[i].n) + ") * (x - (" + to_string(x[i - 1].m) + "/" + to_string(x[i - 1].n) + "))^2 + "
@@ -592,7 +592,6 @@ public:
 
 // void init
 //		for (int i = 0; i < point_count; i++)
-//Code by volkov
 //			cin >> x[i + 1] >> y[i + 1];
 
 		for (int i = 2; i < point_count; i++)
@@ -654,7 +653,7 @@ public:
 
 		for (int i = point_count - 1; i > 2; i--)
 		{
-			// Рассчитатиь коэффицент для стрчки//Code by volkov
+			// Рассчитатиь коэффицент для стрчки
 			T coeff;
 			coeff = ch[i - 1][i + 1] / ch[i][i + 1];
 			mult_vect(ch[i], point_count + 2, coeff);
